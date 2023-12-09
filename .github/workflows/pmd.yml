@@ -1,4 +1,4 @@
-name: CI/CD with PMD
+name: CI/CD with Gradle
 
 on:
   push:
@@ -19,8 +19,8 @@ jobs:
           distribution: 'adopt'
           java-version: '11'
 
-      - name: Build with Maven
-        run: mvn clean install
+      - name: Build with Gradle
+        run: ./gradlew build
 
   pmd:
     runs-on: ubuntu-latest
@@ -38,4 +38,4 @@ jobs:
           java-version: '11'
 
       - name: Run PMD
-        run: mvn pmd:check
+        run: ./gradlew pmdCheck
