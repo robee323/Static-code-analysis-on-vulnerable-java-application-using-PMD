@@ -1,4 +1,4 @@
-name: CI/CD with PWD for GitHub Action
+name: PMD Check for GitHub Action
 
 on:
   push:
