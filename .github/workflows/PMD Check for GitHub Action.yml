@@ -1,4 +1,4 @@
-name: CI/CD with PWD for GitHub Action
+name: P for GitHub Action
 
 on:
   push:
