@@ -1,4 +1,4 @@
-name: P for GitHub Action
+name: PMD for GitHub Action
 
 on:
   push:
