@@ -29,15 +29,4 @@ tasks.named('test') {
 	useJUnitPlatform()
 }
 
-pmd {
-    toolVersion = '6.40.0' // or the version you want to use
-    ignoreFailures = false // Set to true if you want the build to succeed even with PMD violations
-}
-
-tasks.withType(Pmd) {
-    reports {
-        xml.enabled = false
-        html.enabled = true
-    }
-}
 
