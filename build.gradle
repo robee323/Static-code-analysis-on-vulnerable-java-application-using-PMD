@@ -5,11 +5,6 @@ plugins {
 	id 'pmd'
 }
 
-pmd {
-    toolVersion = '6.40.0'
-    ignoreFailures = false
-}
-
 group = 'com.datadoghq.workshops'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '17'
