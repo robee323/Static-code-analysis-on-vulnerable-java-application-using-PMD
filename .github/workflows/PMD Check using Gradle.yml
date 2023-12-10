@@ -1,13 +1,27 @@
-name: PMD Check
+name: PMD Check using Gradle
 
 on:
   push:
     branches:
       - main
-    paths:
-      - '**/*.java'
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'adopt'
+          java-version: '17'
+
+      - name: Build with Gradle
+        run: ./gradlew build
+
   pmd:
     runs-on: ubuntu-latest
 
@@ -31,4 +45,3 @@ jobs:
         with:
           name: pmd-report
           path: build/reports/pmd
-
