@@ -1,4 +1,4 @@
-name: PMD Check
+name: PMD Check with Gradle
 
 on:
   pull_request:
