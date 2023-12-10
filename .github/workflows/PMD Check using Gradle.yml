@@ -1,7 +1,9 @@
 name: PMD Check
 
 on:
-  pull_request:
+  push:
+    branches:
+      - main
     paths:
       - '**/*.java'
 
@@ -29,3 +31,4 @@ jobs:
         with:
           name: pmd-report
           path: build/reports/pmd
+
