@@ -26,7 +26,6 @@ dependencies {
   implementation 'org.projectlombok:lombok:1.18.22'
   compileOnly 'org.projectlombok:lombok:1.18.24'
   annotationProcessor 'org.projectlombok:lombok:1.18.24'
-  pmdPlugins 'group:artifact:version'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	
 }
@@ -37,7 +36,6 @@ tasks.named('test') {
 
 pmd {
     toolVersion = '6.40.0' // or the version you want to use
-    ruleSets = files('path/to/your/ruleset.xml')
     ignoreFailures = false // Set to true if you want the build to succeed even with PMD violations
 }
 
