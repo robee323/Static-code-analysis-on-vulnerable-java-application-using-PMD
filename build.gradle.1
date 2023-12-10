@@ -33,10 +33,3 @@ pmd {
     toolVersion = '6.40.0'
     ignoreFailures = false
 }
-
-tasks.withType(Pmd) {
-    reports {
-        xml.isEnabled = false
-        html.isEnabled = true
-    }
-}
