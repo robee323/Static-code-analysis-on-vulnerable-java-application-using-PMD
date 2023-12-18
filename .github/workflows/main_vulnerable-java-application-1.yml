@@ -18,8 +18,10 @@ jobs:
         with:
           java-version: '17'
 
-      - name: Build with Gradle
-        run: ./gradlew clean build
+      - name: Clean and Build with Gradle
+        run: |
+          ./gradlew clean
+          ./gradlew build
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
@@ -46,5 +48,5 @@ jobs:
         with:
           app-name: 'vulnerable-java-application-1'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3AEFEA9BDD63406C84312EE1CAF1C114 }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_1234 }}
           package: '*.jar'
