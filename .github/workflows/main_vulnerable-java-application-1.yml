@@ -46,5 +46,5 @@ jobs:
         with:
           app-name: 'vulnerable-java-application-1'
           slot-name: 'production'
-          publish-profile: ${{ ecrets.AZUREAPPSERVICE_PUBLISHPROFILE_3AEFEA9BDD63406C84312EE1CAF1C114 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3AEFEA9BDD63406C84312EE1CAF1C114 }}
           package: 'vulnerable-java-application-1.jar'
