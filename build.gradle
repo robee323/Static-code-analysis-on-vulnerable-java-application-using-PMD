@@ -14,15 +14,15 @@ repositories {
 }
 
 azurewebapp {
-    subscription = '<your subscription id>'
-    resourceGroup = '<your resource group>'
-    appName = '<your app name>'
-    pricingTier = 'P1v2' 
-    region = 'westus' 
+    subscription = 'ea6f8bca-b606-4e94-a755-cfffa091ec36'
+    resourceGroup = 'ZarzadzanieDevSecOps'
+    appName = 'vulnerable-java-application'
+    pricingTier = 'B1' 
+    region = 'westeu' 
     runtime {
         os = 'Linux' 
         webContainer = 'Tomcat 9.0'
-        javaVersion = 'Java 8'
+        javaVersion = 'Java 17'
     }
 
 dependencies {
