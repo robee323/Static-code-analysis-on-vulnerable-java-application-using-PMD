@@ -18,7 +18,7 @@ azurewebapp {
     resourceGroup = 'ZarzadzanieDevSecOps'
     appName = 'vulnerable-java-application'
     pricingTier = 'B1' 
-    region = 'westeu' 
+    region = 'eastus' 
     runtime {
         os = 'Linux' 
         webContainer = 'Java SE'
