@@ -2,6 +2,7 @@ plugins {
 	id 'org.springframework.boot' version '2.7.3'
 	id 'io.spring.dependency-management' version '1.0.13.RELEASE'
 	id 'java'
+	id "com.microsoft.azure.azurewebapp" version "1.1.0"
 }
 
 group = 'com.datadoghq.workshops'
@@ -11,6 +12,18 @@ sourceCompatibility = '17'
 repositories {
 	mavenCentral()
 }
+
+azurewebapp {
+    subscription = '<your subscription id>'
+    resourceGroup = '<your resource group>'
+    appName = '<your app name>'
+    pricingTier = 'P1v2' 
+    region = 'westus' 
+    runtime {
+        os = 'Linux' 
+        webContainer = 'Tomcat 9.0'
+        javaVersion = 'Java 8'
+    }
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
