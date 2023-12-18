@@ -23,7 +23,8 @@ azurewebapp {
         os = 'Linux' 
         webContainer = 'Java SE'
         javaVersion = 'Java 17'
-    }
+    	    }
+	  }
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
