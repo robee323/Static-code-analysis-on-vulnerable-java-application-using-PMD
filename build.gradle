@@ -17,7 +17,7 @@ azurewebapp {
     subscription = 'ea6f8bca-b606-4e94-a755-cfffa091ec36'
     resourceGroup = 'ZarzadzanieDevSecOps'
     appName = 'vulnerable-java-application'
-    pricingTier = 'B3' 
+    pricingTier = 'P3v2' 
     region = 'eastus' 
     runtime {
         os = 'Linux' 
